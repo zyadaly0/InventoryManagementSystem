@@ -24,6 +24,7 @@ public Product getProduct() {
     return product;
 }
 
+
 public void setQuantity(int quantity) {
     this.quantity=quantity;
 }
