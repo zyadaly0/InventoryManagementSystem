@@ -9,7 +9,8 @@ public class Product {
     
     private int id;
     private String name ;
-    private double price;
+    private double sellingPrice;
+    private double costPrice;
     private Category category;
     private int quantity;
     private String productionDate;
@@ -21,7 +22,7 @@ public Product()
  } 
  public Product(int id, String name, Category category, Supplier supplier,
                    String productionDate, String expirationDate,
-                   int quantity, double price) {
+                   int quantity, double sellingPrice ,double costPrice) {
 
         this.id = id;
         this.name = name;
@@ -30,7 +31,8 @@ public Product()
         this.productionDate = productionDate;
         this.expirationDate = expirationDate;
         this.quantity = quantity;
-        this.price = price;
+        this.sellingPrice = sellingPrice;
+        this.costPrice=costPrice;
     }
  
  public int getId() { 
@@ -54,8 +56,12 @@ public Product()
     public int getQuantity() { 
         return quantity; 
     }
-    public double getPrice() {
-        return price; 
+    public double getSellingPrice() {
+        return sellingPrice; 
+    }
+    public double getCostPrice()
+    {
+        return costPrice ;
     }
 
     public void setId(int id) { 
@@ -79,8 +85,10 @@ public Product()
     public void setQuantity(int quantity) {
         this.quantity = quantity; 
     }
-    public void setPrice(double price) { 
-        this.price = price; 
+    public void setSellingPrice(double sellingPrice) { 
+        this.sellingPrice = sellingPrice; 
     }
-
+    public void setCostPrice(double costPrice) { 
+        this.costPrice = costPrice; 
+    }
 }

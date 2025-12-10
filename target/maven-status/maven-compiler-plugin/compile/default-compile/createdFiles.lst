@@ -1,5 +1,5 @@
 com\mycompany\inventory\Order.class
-com\mycompany\inventory\INVENTORY.class
+com\mycompany\inventory\AdminModule.class
 com\mycompany\inventory\OrderItem.class
 com\mycompany\inventory\Offer.class
 com\mycompany\inventory\Category.class

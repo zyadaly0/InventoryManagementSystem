@@ -3,20 +3,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.inventory;
-
+import java.util.*;
 
 public class Offer {
-     private int id;
+    private int id;
     private Product product;
     private double discountPercent;
-    private String startDate;
-    private String endDate;
+    private Date startDate;
+    private Date endDate;
 
 public Offer() {
     
 }
 public Offer(int id,Product product,double discountPercent,
-             String startDate, String endDate )
+             Date startDate, Date endDate )
 {
     this.id=id;
     this.discountPercent=discountPercent;
@@ -30,13 +30,14 @@ public void setId(int id) {
 public void setProduct(Product product) {
     this.product=product;
 }
+
 public void setDiscountPercent(double discountPercent) {
     this.discountPercent=discountPercent; 
 }
-public void setStartDate(String startDate) {
+public void setStartDate(Date startDate) {
     this.startDate=startDate; 
 }
-public void setEndDate(String endDate) {
+public void setEndDate(Date endDate) {
     this.endDate=endDate; 
 }
 
@@ -49,10 +50,14 @@ public void setEndDate(String endDate) {
  public double getDiscountPercent() {
      return discountPercent; 
  }
- public String getStartDate() {
+ public Date getStartDate() {
      return startDate; 
  }
- public String getEndDate() { 
+ public Date getEndDate() { 
      return endDate; 
  }
+ public int getProductId()
+{
+   return product.getId();
+}
 }
